@@ -12,6 +12,23 @@ enum Brand: CaseIterable {
     case mazda
     case mersedesBenz
     case volkswagen
+    
+    init(title: String) {
+        if title == "Audi" {
+            self = .audi
+        } else if title == "BMW" {
+            self = .bmw
+        } else if title == "Mazda" {
+            self = .mazda
+        } else if title == "MersedesBenz" {
+            self = .mersedesBenz
+        } else if title == "Volkswagen" {
+            self = .volkswagen
+        }
+        else {
+                    self = .audi
+                }
+    }
     var title: String {
         switch self {
         case .audi:

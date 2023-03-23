@@ -113,14 +113,14 @@
 				1C818F4029B614600024BF56 /* SceneDelegate.swift */,
 				1C818F4229B614600024BF56 /* ViewController.swift */,
 				1CFA452329BD046E002AF4CB /* Country.swift */,
-				1C818F4429B614600024BF56 /* Main.storyboard */,
-				1C818F4729B614600024BF56 /* Assets.xcassets */,
-				1C818F4929B614600024BF56 /* LaunchScreen.storyboard */,
-				1C818F4C29B614600024BF56 /* Info.plist */,
 				1C1DC27829B7D4EF0039CD0C /* Type.swift */,
 				1C1DC27A29B7D6F50039CD0C /* Brand.swift */,
 				1CEB758C29B886D300168C5A /* ProductionYear.swift */,
 				1CEB758E29B890FC00168C5A /* Fuel.swift */,
+				1C818F4429B614600024BF56 /* Main.storyboard */,
+				1C818F4729B614600024BF56 /* Assets.xcassets */,
+				1C818F4929B614600024BF56 /* LaunchScreen.storyboard */,
+				1C818F4C29B614600024BF56 /* Info.plist */,
 			);
 			path = CustomsClearanceCalculator;
 			sourceTree = "<group>";

@@ -6,12 +6,27 @@
 //
 
 import Foundation
-enum Type: CaseIterable {
-case sedan
-case coupe
-case stationWagon
-case minivan
+enum Model: CaseIterable {
     
+    case sedan
+    case coupe
+    case stationWagon
+    case minivan
+    
+    init(title: String) {
+        if title == "Sedan" {
+            self = .sedan
+        } else if title == "Coupe" {
+            self = .coupe
+        } else if title == "stationWagon" {
+            self = .stationWagon
+        } else if title == "Minivan" {
+            self = .minivan
+        }
+        else {
+                    self = .sedan
+                }
+    }
     var title: String {
         switch self {
         case .sedan:

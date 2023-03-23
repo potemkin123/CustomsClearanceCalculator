@@ -16,7 +16,21 @@ enum Fuel: CaseIterable {
     case diesel
     case gas
     case electro
-   
+    
+    init(title: String) {
+        if title == "Petrol" {
+            self = .petrol
+        } else if title == "Diesel" {
+            self = .diesel
+        } else if title == "Gas" {
+            self = .gas
+        } else if title == "Electro" {
+            self = .electro
+        }
+        else {
+                    self = .petrol
+                }
+    }
     var title: String {
         switch self {
         case .petrol:

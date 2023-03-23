@@ -6,112 +6,82 @@
 //ProductionYear (цена)
 //2015 - 2023. ДО 2018 года - +500 цена, с 2018 - 2023 - +100 цена
 
-//import Foundation
-//enum Production: CaseIterable {
-//    static func production (number: Int) -> String {
-//        switch number {
-//        case 1:
-//            return "2015"
-//        case 2:
-//            return "2016"
-//        case 3:
-//            return "2017"
-//        case 4:
-//            return "2018"
-//        case 5:
-//            return "2019"
-//        case 6:
-//            return "2020"
-//        case 7:
-//            return "2021"
-//        case 8:
-//            return "2022"
-//        case 9:
-//            return "2023"
-//        default:
-//            return ""
-//        }
-//    }
-//    var value: Int {
-//        func production (value: Int) -> Int {
-//            switch value {
-//            case 1:
-//                return +500
-//            case 2:
-//                return +500
-//            case 3:
-//                return +500
-//            case 4:
-//                return +500
-//            case 5:
-//                return +1000
-//            case 6:
-//                return +1000
-//            case 7:
-//                return +1000
-//            case 8:
-//                return +1000
-//            case 9:
-//                return +1000
-//            default:
-//                return 0
-//            }
-//        }
-//        
-//    }
-//}
 enum Production: CaseIterable {
-    case a
-    case b
-    case c
-    case d
-    case e
-    case f
-    case g
-    case h
-    case i
+    case y2015
+    case y2016
+    case y2017
+    case y2018
+    case y2019
+    case y2020
+    case y2021
+    case y2022
+    case y2023
+    init(title: String) {
+        if title == "2015" {
+            self = .y2015
+        } else if title == "2016" {
+            self = .y2016
+        } else if title == "2017" {
+            self = .y2017
+        } else if title == "2018" {
+            self = .y2018
+        } else if title == "2019" {
+            self = .y2019
+        } else if title == "2020" {
+            self = .y2020
+        } else if title == "2021" {
+            self = .y2021
+        } else if title == "2022" {
+            self = .y2022
+        } else if title == "2023" {
+            self = .y2023
+        }
+        else {
+            self = .y2015
+        }
+    }
     var title: String {
         switch self {
-        case .a:
+        case .y2015:
             return "2015"
-        case .b:
+        case .y2016:
             return "2016"
-        case .c:
+        case .y2017:
             return "2017"
-        case .d:
+        case .y2018:
             return "2018"
-        case .e:
+        case .y2019:
             return "2019"
-        case .f:
+        case .y2020:
             return "2020"
-        case .g:
+        case .y2021:
             return "2021"
-        case .h:
+        case .y2022:
             return "2022"
-        case .i:
+        case .y2023:
             return "2023"
         }
     }
     var value: Int {
         switch self {
-        case .a:
-            return +500
-        case .b:
-            return +500
-        case .c:
-            return +500
-        case .d:
-            return +500
-        case .e:
-            return +1000
-        case .f:
-            return +1000
-        case .g:
-            return +1000
-        case .h:
-            return +1000
-        case .i:
-            return +1000
+        case .y2015:
+            return 500
+        case .y2016:
+            return 500
+        case .y2017:
+            return 500
+        case .y2018:
+            return 500
+        case .y2019:
+            return 1000
+        case .y2020:
+            return 1000
+        case .y2021:
+            return 1000
+        case .y2022:
+            return 1000
+        case .y2023:
+            return 1000
             
         }
     }
